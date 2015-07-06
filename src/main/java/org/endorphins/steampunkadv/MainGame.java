@@ -18,10 +18,10 @@ public class MainGame extends JFrame{
     {
         MainGame game = new MainGame();
         
-        PlayerCharacter mainCharacter = PlayerCharacter.createCharacter();
-        System.out.println("Hello, " + mainCharacter.name + "!");
-        System.out.println("Here is your character sheet:");
-        System.out.println(mainCharacter.getCharacterSheet());
+        // PlayerCharacter mainCharacter = PlayerCharacter.createCharacter();
+        // System.out.println("Hello, " + mainCharacter.name + "!");
+        // System.out.println("Here is your character sheet:");
+        // System.out.println(mainCharacter.getCharacterSheet());
         game.run();
         
         System.exit(0);
