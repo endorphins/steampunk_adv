@@ -28,6 +28,7 @@ public class CharacterStats extends Stats{
     
     public void equipItem(ItemStats newStats, boolean equipping){
         System.out.println("IS EQUIPPING: " + equipping);
+        //equipping the item
         if(equipping){
             strMod += newStats.strScore;
             dexMod += newStats.dexScore;
@@ -41,6 +42,7 @@ public class CharacterStats extends Stats{
             dmgMod += newStats.dmgScore;
             armorMod += newStats.armorScore;
         }
+        //unequipping the item
         else{
             strMod -= newStats.strScore;
             dexMod -= newStats.dexScore;
@@ -55,6 +57,7 @@ public class CharacterStats extends Stats{
             armorMod -= newStats.armorScore;
         }
         
+        //update scores after equipping/unequipping item
         updateScores();
     }
     
